@@ -7,5 +7,5 @@ The fullfat gamecake is rather big and I no longer bother building raspbian, but
 
 1. Plug a good power supply into the PI
 2. Power upto 4 usb-midi keyboards and synths from its USB ports.
-3. Redirect midi singnals between them so the keybaord connects direcly to the synth.
+3. Redirect midi signals between them so the keyboard connects direcly to the synth.
 
