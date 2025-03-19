@@ -1,0 +1,9 @@
+cd `dirname $0`
+
+cp -r gamecake/exe_gamecake .
+
+
+
+
+
+
