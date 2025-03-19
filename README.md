@@ -9,3 +9,4 @@ The fullfat gamecake is rather big and I no longer bother building raspbian, but
 2. Power upto 4 usb-midi keyboards and synths from its USB ports.
 3. Redirect midi signals between them so the keyboard connects direcly to the synth.
 
+Simple grab the premade files in the exe directory, they should run on a raspbian pi providing gamecake.midi functionality.
