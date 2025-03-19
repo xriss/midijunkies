@@ -83,7 +83,7 @@ EOF
 sudo rm root/etc/ssh/sshd_config.d/rename_user.conf
 
 echo " copying kernel and dtb "
-cp boot/bcm2710-rpi-2-b.dtb roms/bcm2710-rpi-2-b.dtb
+cp boot/bcm2710-rpi-3-b-plus.dtb roms/bcm2710-rpi-3-b-plus.dtb
 cp boot/kernel8.img roms/kernel8.img
 
 ./box-umount
