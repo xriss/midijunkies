@@ -2,6 +2,7 @@
 build-*
 gamecake
 vbox/roms
+exe
 
 exe_gamecake/preloadlibs.c
 exe_gamecake/cache.c
