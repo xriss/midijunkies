@@ -127,10 +127,10 @@ echo " installing packages we will need for building etc"
 echo " installing build dependencies"
 #./ssh " sudo apt-get install -y libssl-dev "
 #./ssh " sudo apt-get install -y libpulse-dev "
+./ssh " sudo apt-get install -y libasound2-dev "
 
 ./ssh " sudo apt-get install -y lua5.1 "
 ./ssh " sudo apt-get install -y lua-filesystem "
-
 
 #./ssh " sudo apt-get install -y libsdl2-dev "
 

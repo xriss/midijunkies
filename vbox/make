@@ -13,6 +13,7 @@ git bundle create gamecake.bundle --all
 dd if=gamecake.bundle | ./ssh " dd of=gamecake.bundle status=progress "
 rm gamecake.bundle
 
+./ssh " rm -rf gamecake ; git clone gamecake.bundle"
 ./ssh " cd gamecake && build/make $* "
 
 scp -P 5522 pi@localhost:gamecake/exe/gamecake.nix ../exe/gamecake.arm

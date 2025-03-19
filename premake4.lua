@@ -1,3 +1,4 @@
+
 all_includes=all_includes or {
 
 	{"lua_zip",			true		},
@@ -11,6 +12,7 @@ all_includes=all_includes or {
 
 }
 
+MIDIJUNKIES=true
 
 dofile("premake4.gamecake.lua")
 
