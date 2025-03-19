@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+
+if [ -z "$1" ] ; then
+	cd ~
+else
+	cd $1
+fi
+echo "echo installing emscipten sdk into $(pwd) / emsdk "
+
+
+# first install a require script
+if ! [[ -x "$(command -v require.sh)" ]] ; then
+
+	echo " we need sudo to install require.sh to /usr/local/bin "
+	sudo wget -O /usr/local/bin/require.sh https://raw.githubusercontent.com/xriss/require.sh/main/require.sh
+	sudo chmod +x /usr/local/bin/require.sh
+
+fi
+
+
+
+require.sh luajit
+require.sh lua-filesystem
+require.sh wget
+require.sh git
+require.sh cmake
+require.sh python3
+
+
+
+rm -rf emsdk
+git clone https://github.com/juj/emsdk.git
+cd emsdk
+
+git pull
+./emsdk update
+./emsdk install latest
+./emsdk activate latest

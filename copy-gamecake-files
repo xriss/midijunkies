@@ -1,9 +1,29 @@
 cd `dirname $0`
 
 cp -r gamecake/exe_gamecake .
+cp -r gamecake/lua_zip .
+cp -r gamecake/lua_zlib .
+cp -r gamecake/lua_midi .
+cp -r gamecake/lib_hacks .
+cp -r gamecake/lib_z .
+cp -r gamecake/lib_zip .
+cp -r gamecake/lib_zzip .
+cp -r gamecake/build .
 
+cp -r gamecake/premake4.lua ./premake4.gamecake.lua
 
+mkdir -p lua
+mkdir -p lua/cmd
+mkdir -p lua/wetgenes
 
-
-
+cp gamecake/lua/lua.lua              lua/
+cp gamecake/lua/apps.lua             lua/
+cp gamecake/lua/cmd/init.lua         lua/cmd/
+cp gamecake/lua/cmd/args.lua         lua/cmd/
+cp gamecake/lua/cmd/help.lua         lua/cmd/
+cp gamecake/lua/cmd/midi.lua         lua/cmd/
+cp gamecake/lua/wetgenes/midi.lua    lua/wetgenes/
+cp gamecake/lua/wetgenes/zips.lua    lua/wetgenes/
+cp gamecake/lua/wetgenes/sandbox.lua lua/wetgenes/
+cp gamecake/lua/wetgenes/string.lua  lua/wetgenes/
 
