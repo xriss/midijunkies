@@ -1,0 +1,9 @@
+cd `dirname $0`
+
+rm -rf gamecake
+git clone --depth 1 https://github.com/xriss/gamecake.git
+
+
+
+
+
