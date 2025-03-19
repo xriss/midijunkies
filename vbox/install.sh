@@ -79,11 +79,11 @@ sudo tee root/boot/userconf boot/userconf <<'EOF'
 pi:$6$rG.YX9cuM9xHE9nt$1zuuFRzSuXrEqSww2Wn7ZR.CtOsm9BIh9XfHwO.7a8sEL.QZVM2SedPJfFLTqwJcyxBHXzVA80szKuTfgDejZ1
 EOF
 
-# dissble security rename user request
+# disable security rename user request
 sudo rm root/etc/ssh/sshd_config.d/rename_user.conf
 
 echo " copying kernel and dtb "
-cp boot/bcm2711-rpi-4-b.dtb roms/bcm2711-rpi-4-b.dtb
+cp boot/bcm2710-rpi-2-b.dtb roms/bcm2710-rpi-2-b.dtb
 cp boot/kernel8.img roms/kernel8.img
 
 ./box-umount
